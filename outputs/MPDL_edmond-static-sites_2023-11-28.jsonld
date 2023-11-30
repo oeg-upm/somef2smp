@@ -1,0 +1,411 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "bs": "https://bioschemas.org/terms/",
+    "codemeta": "https://w3id.org/codemeta/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "maSMP:": "https://discovery.biothings.io/view/maSMP/",
+    "@dateModified": "2023-11-30"
+  },
+  "@graph": [
+    {
+      "@id": "schema:programmingLanguage",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The computer programming language.",
+      "rdfs:label": "programmingLabel",
+      "text": "HTML"
+    },
+    {
+      "@id": "schema:version",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The version of the CreativeWork embodied by a specified resource.",
+      "rdfs:label": "version"
+    },
+    {
+      "@id": "schema:citation",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc. Values expected to be one of these types.",
+      "rdfs:label": "citation"
+    },
+    {
+      "@id": "schema:contributor",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Contributors.",
+      "rdfs:label": "contributor"
+    },
+    {
+      "@id": "schema:description",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A description of the item..",
+      "rdfs:label": "description",
+      "text": "This Github repository contents legal statements and help indications for users of the MPDL's research data repository **Edmond**.  \n \n"
+    },
+    {
+      "@id": "schema:identifier",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+      "rdfs:label": "identifier"
+    },
+    {
+      "@id": "schema:keywords",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+      "rdfs:label": "keywords",
+      "text": ""
+    },
+    {
+      "@id": "schema:license",
+      "@type": "rdf:Property",
+      "rdfs:comment": "license",
+      "rdfs:label": "license"
+    },
+    {
+      "@id": "schema:maintainer",
+      "@type": "rdf:Property",
+      "rdfs:comment": "maintainer",
+      "rdfs:label": "maintainer"
+    },
+    {
+      "@id": "schema:name",
+      "@type": "rdf:Property",
+      "rdfs:comment": "The name of the item.",
+      "rdfs:label": "name",
+      "text": "edmond-static-sites"
+    },
+    {
+      "@id": "codemata:referencePublication",
+      "@type": "rdf:Property",
+      "rdfs:comment": "An academic publication related to the software.",
+      "rdfs:label": "referencePublication"
+    },
+    {
+      "@id": "schema:installURL",
+      "@type": "rdf:Property",
+      "rdfs:comment": "URL at which the app may be installed, if different from the URL of the item.",
+      "rdfs:label": "installURL",
+      "url": "https://github.com/MPDL/edmond-static-sites/releases"
+    },
+    {
+      "@id": "bs:input",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "bs:FormalParameter"
+      },
+      "rdfs:comment": "An input required to use the computational workflow (eg. Excel spreadsheet, BAM file).",
+      "rdfs:label": "input"
+    },
+    {
+      "@id": "bs:output",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "bs:FormalParameter"
+      },
+      "rdfs:comment": "An output produced by the computational workflow (or software).",
+      "rdfs:label": "output"
+    },
+    {
+      "@id": "codemeta:readme",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "rdfs:comment": "Link to this software Readme file. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
+      "rdfs:label": "readme"
+    },
+    {
+      "@id": "schema:operatingSystem",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the operating system.",
+      "rdfs:label": "operatingSystem"
+    },
+    {
+      "@id": "schema:processorRequirements",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the processor specification.",
+      "rdfs:label": "processorRequirements"
+    },
+    {
+      "@id": "schema:runtimePlatform",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      },
+      "rdfs:comment": "If the running was done by a direct execution (rather than via a container), indicate the runtime platform.",
+      "rdfs:label": "runtimePlatform"
+    },
+    {
+      "@id": "maSMP:SoftwareApplication",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension of schema:SoftwareApplication adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
+      "rdfs:label": "SoftwareApplication",
+      "rdfs:subClassOf": {
+        "@id": "schema:SoftwareApplication"
+      }
+    },
+    {
+      "@id": "maSMP:SoftwareRunAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "SoftwareRunAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
+      }
+    },
+    {
+      "@id": "maSMP:SoftwareSourceCode",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Extension of schema:SoftwareSourceCode adding properties corresponding to the Software Management Plan use case. For more information on SMPs see [ELIXIR Software Management Plan for Life Sciences](https://doi.org/10.37044/osf.io/k8znb). Properties have also been [mapped via crosswalks to other SMPs](https://doi.org/10.5281/zenodo.8087357). ",
+      "rdfs:label": "SoftwareSourceCode",
+      "rdfs:subClassOf": {
+        "@id": "schema:SoftwareSourceCode"
+      }
+    },
+    {
+      "@id": "maSMP:TestAction",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "The act of testing an object according to its specifications. For instance, testing a software with a particular testType using a specific testInput and getting a specific testOutput (aka result).",
+      "rdfs:label": "TestAction",
+      "rdfs:subClassOf": {
+        "@id": "schema:Action"
+      }
+    },
+    {
+      "@id": "maSMP:developerDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Documentation about this software directed to developers who will use or reuse (e.g., extend) this software",
+      "rdfs:label": "developerDocumentation"
+    },
+    {
+      "@id": "maSMP:furtherDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Any other documentation corresponding to this software that is not better specified by other documentation related properties",
+      "rdfs:label": "furtherDocumentation"
+    },
+    {
+      "@id": "maSMP:learningResource",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:LearningResource"
+      },
+      "rdfs:comment": "Any [LearningResource](https://schema.org/LearningResource) that can provide orientation towards learning, education, skill acquisition, and other educational purposes about this research software.",
+      "rdfs:label": "learningResource"
+    },
+    {
+      "@id": "codemeta:referencePublication",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:ScholarlyArticle"
+      },
+      "rdfs:comment": "An academic publication related to the software. Property defined in the [Codemeta terms](https://codemeta.github.io/terms/).",
+      "rdfs:label": "referencePublication"
+    },
+    {
+      "@id": "maSMP:runContainer",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      },
+      "rdfs:comment": "If the running was done using a container, such container should be pointed to here.",
+      "rdfs:label": "runContainer"
+    },
+    {
+      "@id": "maSMP:softwareRun",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareRunAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "rdfs:comment": "Software executed by this running action.",
+      "rdfs:label": "softwareRun"
+    },
+    {
+      "@id": "maSMP:softwareTested",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Link to the software tested by this action.",
+      "rdfs:label": "softwareTested",
+      "schema:domainIncludes": {
+        "@id": "maSMP:TestAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:SoftwareSourceCode"
+        },
+        {
+          "@id": "schema:SoftwareApplication"
+        }
+      ]
+    },
+    {
+      "@id": "maSMP:testInput",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:TestAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Thing"
+        },
+        {
+          "@id": "schema:ListItem"
+        }
+      ],
+      "rdfs:comment": "Input used to performed the test. Some tests may not require any input, some may require multiple ones. If the order is important in the case of multiple inputs, a ListItem could help.",
+      "rdfs:label": "testInput"
+    },
+    {
+      "@id": "maSMP:testType",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:TestAction"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }
+      ],
+      "rdfs:comment": "The type of test that it is performed on the object.",
+      "rdfs:label": "testType"
+    },
+    {
+      "@id": "maSMP:testedWith",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "maSMP:TestAction"
+      },
+      "rdfs:comment": "Testing actions (e.g., continuous integration, end-to-end, etc.) performed on this software.",
+      "rdfs:label": "testedWith"
+    },
+    {
+      "@id": "maSMP:userDocumentation",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "maSMP:SoftwareSourceCode"
+        },
+        {
+          "@id": "maSMP:SoftwareApplication"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:comment": "Documentation about this software directed to users who will use this software as it is.",
+      "rdfs:label": "userDocumentation"
+    },
+    {
+      "@id": "maSMP:versionControlSystem",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "maSMP:SoftwareSourceCode"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:SoftwareApplication"
+      },
+      "rdfs:comment": "Version control system used for this source code, to keep track of all commits, branches and so.",
+      "rdfs:label": "versionControlSystem",
+      "url": "https://github.com"
+    }
+  ]
+}
