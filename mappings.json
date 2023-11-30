@@ -1,0 +1,87 @@
+{
+    "maSMP:versionControlSystem":{
+        "type": "direct",
+        "attribute_name":"url",
+        "attribute_value":"https://github.com"
+    },
+    "schema:programmingLanguage":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"programming_languages"
+    },
+    "schema:version":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"releases"
+    },
+    "schema:citation":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"citation"
+    },
+    "schema:contributor":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"contributors"
+    },
+    "schema:description":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"description"
+    },
+    "schema:identifier":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"doi"
+    },
+    "schema:keywords":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"keywords"
+    },
+    "schema:license":{
+        "type": "somef",
+        "attribute_name":"url",
+        "attribute_value":"license"
+    },
+    "schema:maintainer":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"contact"
+    },
+    "schema:name":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"name"
+    },
+    "codemata:referencePublication":{
+        "type": "somef",
+        "attribute_name":"url",
+        "attribute_value":"related_papers"
+    },
+    "maSMP:userDocumentation":{
+        "type": "somef",
+        "attribute_name":"url",
+        "attribute_value":"documentation"
+    },
+    "schema:installURL":{
+        "type": "somef",
+        "attribute_name":"url",
+        "attribute_value":"download_url"
+    },
+    "maSMP:runInput":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"executable_example"
+    },
+    "maSMP:softwareRun":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"invocation"
+    },
+    "maSMP:runContainer":{
+        "type": "somef",
+        "attribute_name":"text",
+        "attribute_value":"executable_example"
+    }
+}
