@@ -1,6 +1,5 @@
 import os
 import json
-from pyld import jsonld
 import sys
 from datetime import datetime
 
@@ -26,19 +25,12 @@ def generate_jsonld(somef_object):
             property_object["@value"]= value["direct"]
         graph.append(property_object)
 
-    # compact a document according to a particular context
-    # see: https://json-ld.org/spec/latest/json-ld/#compacted-document-form
-    #compacted = jsonld.compact(doc, context)
-
-    #compacted = jsonld.compact(compacted, graph)
-
     doc["@context"] = context
 
     doc["@graph"] = graph
 
     return doc
 
-    #print(json.dumps(compacted, indent=2))
 def generate_jsonld_v2(somef_object, jsonld):
     for entry in jsonld["@graph"]:
         if entry["@id"] in mapping:
@@ -108,6 +100,6 @@ for file in files:
     jsonld = generate_jsonld_v2(somef_json, cloned_json_object)
 
 
-    output_file = open("outputs/"+file.replace(".json",".jsonld"), 'w')
+    output_file = open("output_test/"+file.replace(".json",".jsonld"), 'w')
     json.dump(jsonld, output_file, indent=2)
     output_file.close()
